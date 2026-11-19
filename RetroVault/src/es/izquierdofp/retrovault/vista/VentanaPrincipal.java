@@ -65,11 +65,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         panelFiltros.add(jLabel1);
 
         cmbConsola.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todas", "NES", "SNES", "Mega Drive", "Game Boy", "PlayStation", "Nintendo 64", "Game Gear", "Arcade" }));
-        cmbConsola.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConsolaActionPerformed(evt);
-            }
-        });
         panelFiltros.add(cmbConsola);
 
         jLabel2.setText("Estado:");
@@ -164,7 +159,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         mnJuegos.setText("Juegos");
 
         mniAnyadir.setText("Añadir juego…");
-        mniAnyadir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, 0));
+        mniAnyadir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         mniAnyadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAnyadirActionPerformed(evt);
@@ -173,7 +168,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         mnJuegos.add(mniAnyadir);
 
         mniEditar.setText("Editar juego…");
-        mniEditar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, 0));
+        mniEditar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
         mniEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniEditarActionPerformed(evt);
@@ -320,9 +315,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void mniSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_mniSalirActionPerformed
-
-    private void cmbConsolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConsolaActionPerformed
-    }//GEN-LAST:event_cmbConsolaActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnyadir;
